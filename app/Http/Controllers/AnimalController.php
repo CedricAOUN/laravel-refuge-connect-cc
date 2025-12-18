@@ -10,6 +10,9 @@ class AnimalController extends Controller
     public function show($id)
     {
         $animal = Animal::find($id);
+        if (!$animal) {
+            return view('errors.not-found');
+        }
         return view('animal.show', [
             'animal' => $animal,
         ]);
