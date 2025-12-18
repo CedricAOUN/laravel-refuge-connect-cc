@@ -78,7 +78,7 @@ class AnimalController extends Controller
     {
         $animal = Animal::find($id);
         if ($animal) {
-            $animal->name = $animal->name . ' (Modifié )';
+            $animal->name = $animal->name . ' modifié';
             $animal->save();
             return redirect()->route('home');
         } else {

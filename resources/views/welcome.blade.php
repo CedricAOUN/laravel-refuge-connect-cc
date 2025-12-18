@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div>
     <h1>Nos animaux</h1>
     <div class="animal-list">
         @forelse ($animals as $animal)

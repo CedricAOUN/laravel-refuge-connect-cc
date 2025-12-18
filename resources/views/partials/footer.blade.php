@@ -3,7 +3,7 @@ $currentYear = date('Y');
 
 ?>
 <footer>
-    <div class="container">
+    <div>
         <p>RefugeConnect - <?php echo $currentYear; ?> </p>
     </div>
 </footer>

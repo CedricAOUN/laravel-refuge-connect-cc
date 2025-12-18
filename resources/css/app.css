@@ -10,6 +10,29 @@
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
+html {
+    font-family: poppins, sans-serif;
+}
+
+body {
+    background-color: #f5f8fa;
+}
+
+a {
+    color: #52c9ff;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+main {
+    margin: 0 20%;
+}
+
 .nav-container {
     margin: 0 20%;
     display: flex;
@@ -25,4 +48,53 @@
 .nav-links {
     display: flex;
     gap: 1rem;
+}
+.nav-links a {
+    color: black;
+}
+
+
+/* ANIMAL LIST  */
+.animal-list {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.animal-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.animal-info {
+    color: black;
+}
+
+.animal-info h2 {
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+.animal-info img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.animal-card-actions {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 0.5rem;
+}
+
+footer {
+    background-color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    border-top: 1px solid #e7e7e7;
 }
