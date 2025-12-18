@@ -9,7 +9,7 @@ class IndexController extends Controller
 {
     public function index()
     {
-        $animals = Animal::orderBy('name')->take(3)->get();
+        $animals = Animal::orderBy('id')->take(3)->get();
         return view('welcome', [
             'animals' => $animals,
         ]);

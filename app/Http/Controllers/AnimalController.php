@@ -58,6 +58,19 @@ class AnimalController extends Controller
         }
     }
 
+    public function addAnimal()
+    {
+        $animal = new Animal();
+        $animal->name = 'Coquillette';
+        $animal->species = 'Chien';
+        $animal->age = 3;
+        $animal->description = 'Une Shiba Inu vive et joyeuse, toujours prête à jouer et à explorer. Coquillette est curieuse, intelligente et très expressive, avec un petit caractère indépendant mais plein de tendresse pour ceux qu’elle aime.';
+        $animal->photo = 'images/animaux/coquillette.png';
+        $animal->save();
+
+        return redirect()->route('home');
+    }
+
     public function modifyAnimal($id)
     {
         $animal = Animal::find($id);
