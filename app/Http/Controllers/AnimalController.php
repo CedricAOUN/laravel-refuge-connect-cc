@@ -54,7 +54,7 @@ class AnimalController extends Controller
                 Animal::create($data);
             }
 
-            return 'Mock data added successfully.';
+            return redirect()->route('home');
         }
     }
 
