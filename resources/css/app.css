@@ -27,6 +27,7 @@ h1 {
     font-size: 3rem;
     font-weight: 900;
     text-align: center;
+    margin: 2rem 0;
 }
 
 main {
@@ -69,15 +70,15 @@ main {
     flex-direction: column;
 }
 
-.animal-info {
+.animal-card-info {
     color: black;
 }
 
-.animal-info h2 {
+.animal-card-info h2 {
     font-size: 1.8rem;
     font-weight: 900;
 }
-.animal-info img {
+.animal-card-info img {
     height: 200px;
     width: 100%;
     object-fit: cover;
@@ -89,6 +90,24 @@ main {
     display: flex;
     justify-content: space-around;
     padding-top: 0.5rem;
+}
+
+/* ANIMAL SHOW  */
+.animal-show {
+    display: flex;
+}
+
+.animal-show img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    margin-right: 2rem;
+}
+.animal-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 1.3rem;
 }
 
 footer {
